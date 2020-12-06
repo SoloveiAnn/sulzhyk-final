@@ -1,0 +1,138 @@
+ <!DOCTYPE html>
+ <html lang="uk">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>SULzhyk</title>
+ </head>
+
+ <body>
+    <header>
+       <nav>
+           <div class="socails"> 
+             <img src="img/fb.svg" alt="Facebook">
+             <img src="img/insta.svg" alt="Instagram">
+             <img src="img/youtube.svg" alt="Youtube">
+           </div>
+
+           <div class="menu">
+             <a href="#пронас">Про нас</a>
+             <a href="#послуги">Послуги</a>
+             <a href="#медіатека">Медіатека</a>
+             <a href="#блоги">Блоги</a>
+             <a href="#тест">Тест</a>
+             <a href="#контакти">Контакти</a>
+           </div>
+
+           <div class="banner">
+             <h1>СУЛжик</h1>
+             <p>Сучасна українська література простими словами</p>
+           </div>
+    </nav>
+    </header>
+
+    <main>
+       <section>
+         <h2>Про нас</h2>
+           <p class="subheader">Вітаємо в мінливому світі сучукрліту!</p>
+           <p>Привіт, мій друже! Ми - спільнота українських письменників, редакторів, видавців та просто фанатів сучукрліту. Тут ти можеш знайти щось цікаве, щось корисне та щось неймовірне. А ще, ми допоможемо тобі написати твій перший (другий? десятий?) шедевр.
+Долучайся! І нехай прибуде з тобою Кокотюха!</p>
+           <img src="img/about-us.jpg" alt="About us">
+       </section>
+
+       <section>
+          <h2>Наші послуги</h2>
+          <p>Псс, перший раз - безкоштовно.</p>
+
+            <article>
+              <p class="price">Від 3$/стор.</p>
+               <h3>Професійна редактура</h3>
+                <p>Твій роман нарешті набув епічно-сакрально-неймовірно-інтригуючого фіналу? Тобі потрібен супергерой Редактор, який приготує його для видавництва.</p>
+                <button>Замовити</button>
+            </article>
+
+            <article>
+              <p class="price">від 40 $</p>
+               <h3>Індивідуальний план вправ з креативного письма</h3>
+                <p>Так-так, літературні навички можна прокачати! І ми створимо для тебе план вправ на кілька місяців або цілий рік.</p>
+                <button>Замовити</button>
+            </article>
+
+            <article>
+              <p class="price">Безцінно</p>
+               <h3>Оренда домашніх улюбленців для натхнення</h3>
+                <p>Упс, ти попався на любові до всього живого. Безліч письменників творили в оточення домашніх улюбленців. Чого тільки варті коти Старого Гема! Але ми не роздаємо тварин. Зате знаємо, хто їм допомагає та як до цього можеш долучитися ти.</p>
+                <button>Допомогти тваринам</button>
+            </article>
+       </section> 
+
+       <section>
+          <h2>Медіатека</h2>
+          <p>У нас є чудові лекції, від яки[ зовсім не хочеться спати! А ще ти можеш послухати трошки підкастів, поки миєш посуд.</p>
+          <p class="learning">Підкасти та лекції</p>
+
+          <article>
+            <img src="img/lit-teoria.jpg" alt="Lections">
+            <h3>Лекції з теорії літератури</h3>
+            <p>Українські критики та критикеси розкажуть тобі, як твориться справжня література. Так-так, навіть постмодерн має свій механзм!</p>
+          </article>
+
+           <article>
+            <img src="img/lit-istoria.jpg" alt="Historical lections">
+            <h3>Лекції з історії літератури</h3>
+            <p>Чому не тільки Шевченко - наше все? Як Жадан став панком? І що таке "Синдром сердешної Оксани"?</p>
+           </article>
+
+           <article>
+            <img src="img/podcast.jpg" alt="Podcats">
+            <h3>Сулжик.Podcast</h3>
+            <p>Хочеш почути голос Михеда перед сном? Чи пробігти пару кілометрів під роздуми Матіос? Це саме те, що Франко прописав!</p>
+           </article>
+        </section>
+
+        <section>
+         <h2>Який ти сьогодні Жадан?</h2>
+          <p>Жадан на кожен день</p>
+          <button>Дізнатися</button>
+          <img src="img/zhadan-punk.jpg" alt="Serhiy Zhadan Music">
+          <img src="img/zhadan-happy.png" alt="Serhiy Zhadan Reading">
+        </section>
+    </main>
+   
+    <footer>
+       <h2>Контакти</h2>
+         <p>Заходь вгості!</p>
+         <p>Львів, вул.Дорошенка, 15</p>
+         <p>Контакти</p>
+         <p>+1 (234) 567 89 00</p>
+         <p>@SULzhyk</p>
+         <img src="img/location.png" alt="Adress">
+
+         <p>Напиши нам!</p>
+           <form method="POST" action="https://formspree.io/f/mknpqwak">
+             <label>Ім'я:
+              <input type="text" name="user-name" placeholder="Your name">
+             </label>
+
+             <label>Телефон для зв'язку:
+              <input type="number" name="number" placeholder="Your phone number">
+             </label>
+
+             <label>Електронна адреса:
+              <input type="email" name="email" placeholder="Your email">
+             </label>
+
+             <label>Повідомлення:
+              <input type="text" name="message" placeholder="Type your message">
+             </label>
+             <input type="submit">
+           </form>
+           <div>
+             <a href="#пронас">Про нас</a>
+             <a href="#послуги">Наші послуги</a>
+             <a href="#медіатека">Медіатека</a>
+             <a href="#контакти">Контакти</a>
+           </div>
+    </footer>
+ </body>
+ </html>
