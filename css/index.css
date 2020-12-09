@@ -3,32 +3,31 @@
 
 .socails {
     margin: 0px -10px -20px;
-    float: left;
 }
 
 .menu {
     font-family: "Lora", sans-serif;
     color: #000000;
-    float: right;
 }
 
 #banner {
     font-family: "Lora", serif;
-    color: #faf5f2;
+    color: #0d3c00;
     text-align: center;
     padding: 250px 0px 250px 0px;
-}
+    background-image: url(../img/main-background.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+    }
 
 h1 {
     font-size: 74px;
     text-align: center;
-
-    opacity: 0.9;
 }
 
 .banner-text {
     font-size: 42px;
-    color: #ffffff;
     text-align: center;
 }
 
