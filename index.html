@@ -25,11 +25,12 @@
              <a href="#контакти">Контакти</a>
            </div>
 
-           <div class="banner">
+           <div id="banner">
              <h1>СУЛжик</h1>
              <p class="banner-text">Літературна агенція. Твій неуявний друг</p>
-             <img src="img/main-background.jpg" alt="Друкарська машинка">
+             <img id="banner-img" src="img/main-background.jpg" alt="Друкарська машинка">
            </div>
+           
     </nav>
     </header>
 
@@ -68,49 +69,66 @@
             </article>
        </section> 
 
-       <section>
-          <h2>Медіатека</h2>
-          <p>У нас є чудові лекції, від яки[ зовсім не хочеться спати! А ще ти можеш послухати трошки підкастів, поки миєш посуд.</p>
+       <section id="mediateca">
+          <h2 class="mediateca-header">Медіатека</h2>
+          <p class="mediateca-about">У нас є чудові лекції, від яких зовсім не хочеться спати! А ще ти можеш послухати трошки підкастів, поки миєш посуд.</p>
           <p class="learning">Підкасти та лекції</p>
+          <p class="learning">Блоги</p>
 
           <article>
-            <img src="img/lit-teoria.jpg" alt="Lections">
-            <h3>Лекції з теорії літератури</h3>
-            <p>Українські критики та критикеси розкажуть тобі, як твориться справжня література. Так-так, навіть постмодерн має свій механзм!</p>
+            <img class="img-mediateca" src="img/lit-teoria.jpg" alt="Лекції">
+            <h3 class="mediateca-subheader">Лекції з теорії літератури</h3>
+            <p class="m-text">Українські критики та критикеси розкажуть тобі, як твориться справжня література. Так-так, навіть постмодерн має свій механзм!</p>
           </article>
 
            <article>
-            <img src="img/lit-istoria.jpg" alt="Historical lections">
-            <h3>Лекції з історії літератури</h3>
-            <p>Чому не тільки Шевченко - наше все? Як Жадан став панком? І що таке "Синдром сердешної Оксани"?</p>
+            <img class="img-mediateca" src="img/lit-istoria.jpg" alt="Лекції з історії літератури">
+            <h3 class="mediateca-subheader">Лекції з історії літератури</h3>
+            <p class="m-text">Чому не тільки Шевченко - наше все? Як Жадан став панком? І що таке "Синдром сердешної Оксани"?</p>
            </article>
 
            <article>
-            <img src="img/podcast.jpg" alt="Podcats">
-            <h3>Сулжик.Podcast</h3>
-            <p>Хочеш почути голос Михеда перед сном? Чи пробігти пару кілометрів під роздуми Матіос? Це саме те, що Франко прописав!</p>
+            <img class="img-mediateca" src="img/podcast.jpg" alt="Подкаст">
+            <h3 class="mediateca-subheader"> Сулжик.Podcast</h3>
+            <p class="m-text">Хочеш почути голос Михеда перед сном? Чи пробігти пару кілометрів під роздуми Матіос? Це саме те, що Франко прописав!</p>
+           </article>
+
+           <article>
+            <img class="img-mediateca" src="img/blog-vitovska.jpg" alt="Блог Вітовської">
+            <h3 class="mediateca-subheader">Як читати Фоєра?</h3>
+            <p class="m-text">Екранізовані романи, криза середнього віку, вегетаріанство. Санька Вітовська про книги Фоєра.</p>
+          </article>
+
+           <article>
+            <img class="img-mediateca" src="img/blog-tsarenko.jpg" alt="Блог Царенко">
+            <h3 class="mediateca-subheader">Постмодерн і сучукрліт</h3>
+            <p class="m-text">Роздуми про "щось своє, зібране з чужого" від Каті Царенко.</p>
            </article>
         </section>
 
-        <section>
-         <h2>Який ти сьогодні Жадан?</h2>
-          <p>Жадан на кожен день</p>
-          <button>Дізнатися</button>
-          <img src="img/zhadan-punk.jpg" alt="Serhiy Zhadan Music">
-          <img src="img/zhadan-happy.png" alt="Serhiy Zhadan Reading">
+        <section id="test">
+         <h2 class="test-header">Який ти сьогодні Жадан?</h2>
+          <p class="test-text">Жадан на кожен день</p>
+          <button class="test-button">Дізнатися</button>
+          <img class="test-img-big" src="img/zhadan-punk.jpg" alt="Сергій Жадан на виступі">
+          <img class="test-img-small" src="img/zhadan-happy.png" alt="Читання Сергія Жадана">
         </section>
     </main>
    
     <footer>
-       <h2>Контакти</h2>
-         <p>Заходь вгості!</p>
-         <p>Львів, вул.Дорошенка, 15</p>
-         <p>Контакти</p>
-         <p>+1 (234) 567 89 00</p>
-         <p>@SULzhyk</p>
-         <img src="img/location.png" alt="Address">
+       <section id="contacts">
+       <div class="contacts-main">
+       <h2 class="contacts-header">Контакти</h2>
+         <p class="contacts-text">Заходь вгості!</p>
+         <p class="contacts-data">Львів, вул.Дорошенка, 15</p>
+         <p class="contacts-text" >Контакти</p>
+         <p class="contacts-data">+1 (234) 567 89 00</p>
+         <p class="contacts-data">@SULzhyk</p>
+         <img src="img/location.png" alt="Адреса">
+         </div>
 
-         <p>Напиши нам!</p>
+         <div class="contacts-form">
+         <p class="contacts-data">Напиши нам!</p>
            <form method="POST" action="https://formspree.io/f/mknpqwak">
              <label>Ім'я:
               <input type="text" name="user-name" placeholder="Your name">
@@ -129,7 +147,9 @@
              </label>
              <input type="submit">
            </form>
-           <div>
+           </div>
+           </section>
+           <div class="footer-menu">
              <a href="#пронас">Про нас</a>
              <a href="#послуги">Наші послуги</a>
              <a href="#медіатека">Медіатека</a>
