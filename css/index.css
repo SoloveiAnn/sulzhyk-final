@@ -6,146 +6,169 @@
     float: left;
 }
 
-.menu{
+.menu {
     font-family: "Lora", sans-serif;
     color: #000000;
     float: right;
 }
-    
 
-#banner{
+#banner {
     font-family: "Lora", serif;
     color: #faf5f2;
     text-align: center;
     padding: 250px 0px 250px 0px;
 }
-h1{
+
+h1 {
     font-size: 74px;
     text-align: center;
+
+    opacity: 0.9;
 }
-.banner-text{
+
+.banner-text {
     font-size: 42px;
     color: #ffffff;
     text-align: center;
 }
 
-.about-us{
+.about-us {
     font-family: "Source Sans Pro", sans-serif;
     padding: 30px 0px 65px 0px;
 }
-.about-us-header{
+
+.about-us-header {
     font-size: 36px;
     color: #79a207;
 }
-.about-us-subheader{
+
+.about-us-subheader {
     font-size: 24px;
     color: #0d3c00;
 }
-.about-us-text{
+
+.about-us-text {
     font-size: 17px;
     color: #707070;
 }
-.about-us-img{
+
+.about-us-img {
     width: 670px;
     height: 510px;
 }
 
-.our-services{
+.our-services {
     background-color: #FAF0E6;
     padding: 20px 0px 130px 0px;
     text-align: center;
 }
-.our-services-header{
+
+.our-services-header {
     font-family: "Lora", serif;
     font-size: 42px;
     color: #0d3c00;
 }
-.our-services-text{
+
+.our-services-text {
     font-family: "Source Sans Pro", sans-serif;
     font-size: 18px;
     color: #191c18;
 }
-.service-list{
+
+.service-list {
     background-color: #ffffff;
     font-family: "Source Sans Pro", sans-serif;
     border-style: solid hidden hidden hidden;
-    border-color: #79a207 #ffffff #ffffff #ffffff; 
+    border-color: #79a207 #ffffff #ffffff #ffffff;
 }
-.price{
+
+.price {
     font-size: 22px;
     font-weight: bold;
     color: #191c18;
 }
-.header-services{
+
+.header-services {
     font-size: 36px;
     color: #0d3c00;
 }
-.text-services{
+
+.text-services {
     font-size: 17px;
     color: #707070;
 }
-.order-button{
+
+.order-button {
     font-size: 11px;
     font-weight: bold;
     color: #ffffff;
     background-color: #6B8E23;
     border: 1px hidden;
     width: 170px;
-    height: 43px; 
+    height: 43px;
     border-radius: 30px;
 }
 
-#mediateca{
+#mediateca {
     padding: 30px 0px 60px 0px;
     text-align: center;
 }
-.mediateca-header{
+
+.mediateca-header {
     font-family: "Lora", serif;
     font-size: 42px;
     color: #191c18;
 }
-.mediateca-about{
+
+.mediateca-about {
     font-family: "Source Sans Pro", sans-serif;
     font-size: 18px;
     color: #191c18;
 }
-.learning{
+
+.learning {
     font-family: "Source Sans Pro", sans-serif;
     font-size: 14px;
     color: #0d3c00;
 }
-.mediateca-subheader{
+
+.mediateca-subheader {
     font-family: "Source Sans Pro", sans-serif;
     font-size: 24px;
     color: #0d3c00;
 }
-.m-text{
+
+.m-text {
     font-family: "Source Sans Pro", sans-serif;
     font-size: 17px;
     color: #707070;
 }
-.img-mediateca{
+
+.img-mediateca {
     width: 382px;
     height: 521px;
 }
 
-#test{
+#test {
     padding: 100px 0px 100px 0px;
     background-color: #202020;
 }
-.test-header{
+
+.test-header {
     font-family: "Lora", serif;
     font-size: 42px;
     text-align: left;
     color: #ffffff;
 }
-.test-text{
+
+.test-text {
     font-family: "Source Sans Pro", sans-serif;
     font-size: 18px;
     color: #ffffff;
     text-align: left;
 }
-.test-button{
+
+.test-button {
     background-color: #6B8E23;
     font-family: "Source Sans Pro", bold;
     font-size: 13px;
@@ -153,46 +176,53 @@ h1{
     text-align: center;
     border: 1px hidden;
     width: 160px;
-    height: 55px; 
+    height: 55px;
     border-radius: 30px;
 }
-.test-img-big{
+
+.test-img-big {
     width: 251px;
     height: 251px;
 }
-.test-img-small{
+
+.test-img-small {
     width: 204px;
     height: 123px;
 }
 
-#contacts{
+#contacts {
     padding: 100px 0px 100px 0px;
     text-align: left;
 }
-.contacts-header{
+
+.contacts-header {
     font-family: "Lora", serif;
     font-size: 42px;
     color: #191c18;
 }
-.contacts-text{
+
+.contacts-text {
     font-family: "Source Sans Pro", sans-serif;
     font-size: 24px;
     color: #191c18;
 }
-.contacts-data{
+
+.contacts-data {
     font-family: "Source Sans Pro", sans-serif;
     font-size: 14px;
     color: #707070;
 }
-.contacts-form{
+
+.contacts-form {
     background-color: #faf5f2;
     font-family: "Source Sans Pro", sans-serif;
     font-size: 14px;
     color: #707070;
 }
-.footer-menu{
-font-family: "Lora", sans-serif;
-color: #000000;
-background-color: #0d3c00;
-height: 117px;
+
+.footer-menu {
+    font-family: "Lora", sans-serif;
+    color: #000000;
+    background-color: #0d3c00;
+    height: 117px;
 }
