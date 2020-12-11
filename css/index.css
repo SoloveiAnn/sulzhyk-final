@@ -1,37 +1,99 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 
-.socails {
-    margin: 0px -10px -20px;
+h1, h2, p, a, div, article, nav{
+margin: 0;
+padding: 0;
+}
+:root {
+--menu-color: #000000;    
+--h1-color: #faf5f2;
+--contact-form-color: #faf5f2;
+scroll-behavior: smooth;
 }
 
-.menu {
+body {
+    max-width: 1100px;
+    margin: auto;
+}
+.socials {
+    padding: -20px -10px -10px 0;
+}
+.socials img{
+    height: 30px;
+    width: 30px;
+}
+#burger-checkbox {
+display: none;
+}
+.burger-menu-icon {
+    font-size: 3rem;
+}
+header nav .menu {
+    display: none;
+}
+header nav input:checked ~ .menu {
+    display: block;
+}
+.menu a {
     font-family: "Lora", sans-serif;
-    color: #000000;
+    color: var(--menu-color);
+    text-decoration: none;
+    border: 1px solid transparent;
+    display: block;
+    padding: 3px;
+}
+.menu a:hover {
+    font-weight: bold;
+    color: #0d3c00;
+}
+.selected {
+    font-weight: bold;
+}
+@media(min-width: 530px) { 
+    header nav {
+        display: flex;
+    }
+    header nav input:checked ~ .menu {
+    display: flex;
+}
+.burger-menu-icon {
+    display: none;
+}
+    header nav .menu {
+        display: flex;
+        flex: 1;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    
 }
 
 #banner {
     font-family: "Lora", serif;
-    color: #0d3c00;
-    text-align: center;
-    padding: 250px 0px 250px 0px;
+    color: var(--h1-color);
     background-image: url(../img/main-background.jpg);
     background-size: cover;
     background-position: center;
-    opacity: 0.8;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     }
 
 h1 {
     font-size: 74px;
-    text-align: center;
+    color: var(--h1-color);
+    
 }
 
-.banner-text {
-    font-size: 42px;
-    text-align: center;
+#banner p {
+    font-size: 42px; 
 }
 
-.about-us {
+'/*'.about-us {
     font-family: "Source Sans Pro", sans-serif;
     padding: 30px 0px 65px 0px;
 }
