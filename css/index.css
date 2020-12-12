@@ -14,6 +14,8 @@
     --background-color: #6685BA; 
     --about-us-h-color: #79a207; 
     --serv-border-color: #79a207; 
+    --subheader-color: #0d3c00;
+    --main-text-color: #707070;
     scroll-behavior: smooth;
 }
 
@@ -120,9 +122,13 @@ h1 {
     font-size: 42px;
 }
 
-.about-us {
+#about-us {
     font-family: "Source Sans Pro", sans-serif;
     padding: 30px 0px 65px 0px;
+    display: block;
+    text-decoration: none;
+    border: 1px solid transparent;
+    
 }
 
 .about-us-header {
@@ -132,20 +138,26 @@ h1 {
 
 .about-us-subheader {
     font-size: 24px;
-    color: #0d3c00;
+    color: var(--subheader-color);
 }
 
 .about-us-text {
     font-size: 17px;
-    color: #707070;
+    color: var(--main-text-color);
 }
 
 .about-us-img {
-    width: 670px;
-    height: 510px;
+   max-width: 660px;
 }
 
-.our-services {
+@media(min-width: 530px) {
+    #about-us {
+        display: grid;
+
+    }
+}
+
+/*.our-services {
     background-color: #FAF0E6;
     padding: 20px 0px 130px 0px;
     text-align: center;
@@ -154,7 +166,7 @@ h1 {
 .our-services-header {
     font-family: "Lora", serif;
     font-size: 42px;
-    color: #0d3c00;
+    color: var(--subheader-color);
 }
 
 .our-services-text {
@@ -183,7 +195,7 @@ h1 {
 
 .text-services {
     font-size: 17px;
-    color: #707070;
+    color: var(--main-text-color);
 }
 
 .order-button {
@@ -229,7 +241,7 @@ h1 {
 .m-text {
     font-family: "Source Sans Pro", sans-serif;
     font-size: 17px;
-    color: #707070;
+    color: var(--main-text-color);
 }
 
 .img-mediateca {
@@ -298,14 +310,14 @@ h1 {
 .contacts-data {
     font-family: "Source Sans Pro", sans-serif;
     font-size: 14px;
-    color: #707070;
+    color: var(--main-text-color);
 }
 
 .contacts-form {
     background-color: #faf5f2;
     font-family: "Source Sans Pro", sans-serif;
     font-size: 14px;
-    color: #707070;
+    color: var(--main-text-color);
 }
 
 .footer-menu {
