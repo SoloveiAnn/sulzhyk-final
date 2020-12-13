@@ -26,6 +26,7 @@
     --serv-back-color: #ffffff;
     --order-button-color: #ffffff;
     --test-text-color: #ffffff;
+    --fotter-font-color: #ffffff;
     scroll-behavior: smooth;
 }
 
@@ -73,7 +74,6 @@ header nav input:checked ~ .menu {
 }
 
 .menu a:hover {
-    font-weight: bold;
     color: var(--menu-hover-color);
 }
 
@@ -98,7 +98,6 @@ header nav input:checked ~ .menu {
         display: flex;
         flex: 1;
         justify-content: space-around;
-        align-items: flex-start;
     }
 }
 
@@ -340,6 +339,7 @@ h1 {
 .mediateca-subheader {
     font-family: "Source Sans Pro", sans-serif;
     font-size: 24px;
+    font-weight: 800;
     color: var(--subheader-color);
     display: flex;
     justify-content: flex-start;
@@ -374,7 +374,6 @@ h1 {
 @media (min-width: 990px) {
     .lection-section {
         grid-template-columns: repeat(3, 1fr);
-        
     }
 
     .blog-section {
@@ -471,12 +470,13 @@ h1 {
     text-align: left;
 }
 
-.contacts-main{
+.contacts-main {
     display: flex;
     flex-direction: column;
     padding: 0 24px 0 24px;
     align-items: flex-start;
 }
+
 .contacts-header {
     font-family: "Lora", serif;
     font-size: 34px;
@@ -502,22 +502,87 @@ h1 {
     display: flex;
     justify-content: flex-start;
 }
-.location-img{
+
+.location-img {
     width: 100%;
     margin: auto;
     display: block;
     padding: 15px 0 15px 0;
 }
-.contacts-form {
+
+form {
     background-color: var(--contact-form-color);
     font-family: "Source Sans Pro", sans-serif;
     font-size: 14px;
     color: var(--main-text-color);
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 60px;
+    text-align: left;
 }
 
-.footer-menu {
-    font-family: "Lora", sans-serif;
-    color: var(--menu-color);
-    background-color: var(--footer-back-color);
-    height: 117px;
+@media (min-width: 780px) {
+    #contacts {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+    }
 }
+
+.form-btn {
+    background-color: #6B8E23;
+    font-family: "Source Sans Pro", bold;
+    font-size: 13px;
+    color: var( --test-text-color);
+    text-align: center;
+    border: 1px hidden;
+    width: 160px;
+    height: 55px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    justify-self: start;
+    align-items: center;
+}
+
+#footer-menu {
+    background-color: var(--footer-back-color);
+    padding: 30px 24px 40px 24px;
+}
+
+#footer-menu a {
+    font-family: "Lora", sans-serif;
+    color: var(--fotter-font-color);
+    text-decoration: none;
+    border: 1px solid transparent;
+    padding: 3px;
+    display: block;
+    text-align: center;
+}
+
+#footer-menu a:hover {
+    color: var(--menu-hover-color);
+}
+
+.footer-info {
+    margin-bottom: 15px 32px 15px 32px;
+    font-size: 12px;
+    margin: 30px;
+    color: var(--contact-form-color);
+}
+
+@media (min-width: 600px) {
+    #footer-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+
