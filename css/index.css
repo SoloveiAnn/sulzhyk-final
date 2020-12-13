@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 
- h1, h2, p, a, div, article, nav {
+ h1, h2, p, a, div, article, nav, section {
     margin: 0;
     padding: 0;
 }
@@ -15,7 +15,17 @@
     --about-us-h-color: #79a207; 
     --serv-border-color: #79a207; 
     --subheader-color: #0d3c00;
+    --header-sev-color: #0d3c00;
+    --learning-text-color: #0d3c00;
+    --footer-back-color: #0d3c00;
     --main-text-color: #707070;
+    --our-srv-back-color: #FAF0E6;
+    --service-text-color: #191c18;
+    --mediateca-main-color: #191c18;
+    --contacts-text-color:#191c18;
+    --serv-back-color: #ffffff;
+    --order-button-color: #ffffff;
+    --test-text-color: #ffffff;
     scroll-behavior: smooth;
 }
 
@@ -117,7 +127,6 @@ h1 {
     font-size: 74px;
     color: var(--h1-color);
     padding-left: 30px;
-    
 }
 
 #banner p {
@@ -129,7 +138,6 @@ h1 {
     font-family: "Source Sans Pro", sans-serif;
     padding: 130px 10px 65px 20px;
     border: 1px solid transparent;
-    
 }
 
 .about-us-header {
@@ -158,9 +166,9 @@ h1 {
 }
 
 .about-us-img {
-   width: 100%;
-   margin: auto;
-  display: block;
+    width: 100%;
+    margin: auto;
+    display: block;
 }
 
 @media(min-width: 850px) {
@@ -170,33 +178,33 @@ h1 {
         grid-template-columns: 1fr 2fr;
         justify-content: center;
     }
+
     .about-us-header {
         grid-column: 1;
         grid-row: 1;
     }
-    
-.about-us-subheader {
-    grid-column: 1;
-    grid-row: 2;
-}
 
-.about-us-text {
-    grid-column: 1;
-    grid-row: 3;
-}
+    .about-us-subheader {
+        grid-column: 1;
+        grid-row: 2;
+    }
 
-.about-us-img {
-   grid-column: 2;
-   grid-row: 1 / span 3;
-   justify-self: start;
-}
+    .about-us-text {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .about-us-img {
+        grid-column: 2;
+        grid-row: 1 / span 3;
+        justify-self: start;
+    }
 }
 
 #our-services {
-    background-color: #FAF0E6;
+    background-color: var(--our-srv-back-color);
     padding: 0 24px 0 24px;
     padding-bottom: 50px;
-   
 }
 
 .our-services-header {
@@ -205,23 +213,22 @@ h1 {
     color: var(--subheader-color);
     display: flex;
     justify-content: center;
-   
 }
 
 .our-services-text {
     font-family: "Source Sans Pro", sans-serif;
     font-size: 18px;
-    color: #191c18;
+    color: var(--service-text-color);
     display: flex;
     justify-content: center;
     padding-top: 30px;
 }
 
 .services {
-    background-color: #ffffff;
+    background-color: var(--serv-back-color);
     font-family: "Source Sans Pro", sans-serif;
     border-style: solid hidden hidden hidden;
-    border-color: var(--serv-border-color) #ffffff #ffffff #ffffff;
+    border-color: var(--serv-border-color) var(--serv-back-color) var(--serv-back-color) var(--serv-back-color);
     border-radius: 4px;
     margin-top: 50px;
     padding: 0 15px 0 15px;
@@ -232,12 +239,10 @@ h1 {
     margin-bottom: 50px;
 }
 
-
-
-.price{
+.price {
     font-size: 22px;
     font-weight: bold;
-    color: #191c18;
+    color: var(--service-text-color);
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -246,11 +251,10 @@ h1 {
 
 .header-services {
     font-size: 36px;
-    color: #0d3c00;
+    color: var(--header-sev-color);
     text-align: center;
     display: flex;
     justify-content: center;
-    
 }
 
 .text-services {
@@ -266,7 +270,7 @@ h1 {
     font-size: 11px;
     font-weight: bold;
     text-transform: uppercase;
-    color: #ffffff;
+    color: var(--order-button-color);
     background-color: #6B8E23;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -284,65 +288,63 @@ h1 {
     .service-list {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 30px;  
+        grid-gap: 30px;
     }
 }
+
 @media (min-width: 900px) {
-    .service-list{
+    .service-list {
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
 #mediateca {
     padding: 30px 24px 60px 24px;
-    
 }
-
 
 #mediateca h2 {
     font-family: "Lora", serif;
     font-size: 42px;
     padding: 10px 0 10px 0;
-    color: #191c18;
+    color: var( --mediateca-main-color);
     display: flex;
     justify-content: center;
-    
 }
 
 .mediateca-about {
     font-family: "Source Sans Pro", sans-serif;
     font-size: 18px;
     text-align: center;
-    color: #191c18;
+    color: var( --mediateca-main-color);
     padding: 10px 0 10px 0 ;
     display: flex;
     justify-content: center;
-    
 }
 
 .learning-text {
     font-family: "Source Sans Pro", sans-serif;
     font-size: 14px;
-    color: #0d3c00;
+    color: var(--learning-text-color);
     padding: 10px 0 20px 0;
     display: flex;
     justify-content: center;
-    
 }
+
 .learn-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
- 
+
 .mediateca-subheader {
     font-family: "Source Sans Pro", sans-serif;
     font-size: 24px;
-    color: #0d3c00;
+    color: var(--subheader-color);
     display: flex;
     justify-content: flex-start;
-    
 }
+
 .m-text {
     font-family: "Source Sans Pro", sans-serif;
     font-size: 17px;
@@ -352,7 +354,8 @@ h1 {
     justify-content: flex-start;
     margin-bottom: 40px;
 }
-.img-mediateca{
+
+.img-mediateca {
     width: 100%;
     border: 1px solid transparent;
     border-radius: 10px;
@@ -360,27 +363,26 @@ h1 {
     display: block;
 }
 
-@media (min-width: 770px){
-    .lection-section{
+@media (min-width: 770px) {
+    .lection-section {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 30px;  
+        grid-gap: 30px;
     }
-}
-@media (min-width: 990px) {
-    .lection-section{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 30px;  
-    }
-    .blog-section{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 30px;  
-    }
-    
 }
 
+@media (min-width: 990px) {
+    .lection-section {
+        grid-template-columns: repeat(3, 1fr);
+        
+    }
+
+    .blog-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+}
 
 #test {
     padding: 90px 40px 90px 40px;
@@ -391,17 +393,16 @@ h1 {
 .test-header {
     font-family: "Lora", serif;
     font-size: 42px;
-    color: #ffffff;
+    color: var(--test-text-color);
     display: flex;
     justify-content: flex-start;
-
 }
 
 .test-text {
     font-family: "Source Sans Pro", sans-serif;
     font-size: 18px;
     font-weight: 600;
-    color: #ffffff;
+    color: var(--test-text-color);
     padding: 20px 0 20px 0;
     margin-bottom: 20px: ;
     display: flex;
@@ -412,7 +413,7 @@ h1 {
     background-color: #6B8E23;
     font-family: "Source Sans Pro", bold;
     font-size: 13px;
-    color: #ffffff;
+    color: var( --test-text-color);
     text-align: center;
     border: 1px hidden;
     width: 160px;
@@ -429,7 +430,6 @@ h1 {
     align-items: center;
 }
 
-
 .test-img {
     width: 100%;
     margin: auto;
@@ -437,33 +437,35 @@ h1 {
 }
 
 @media (min-width: 700px) {
-    #test{
+    #test {
         display: grid;
         grid-gap: 10px;
         grid-template-columns: 1fr 2fr;
         justify-content: center;
     }
+
     .test-header {
         grid-column: 1;
         grid-row: 1;
     }
-    
-.test-text {
-    grid-column: 1;
-    grid-row: 2;
+
+    .test-text {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .test-button {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .test-img {
+        grid-column: 2;
+        grid-row: 1 / span 3;
+        justify-self: start;
+    }
 }
 
-.test-button {
-    grid-column: 1;
-    grid-row: 3;
-}
-
-.test-img {
-   grid-column: 2;
-   grid-row: 1 / span 3;
-   justify-self: start;
-}
-}
 #contacts {
     padding: 100px 0px 100px 0px;
     text-align: left;
@@ -472,13 +474,13 @@ h1 {
 .contacts-header {
     font-family: "Lora", serif;
     font-size: 42px;
-    color: #191c18;
+    color: var(--contacts-text-color);
 }
 
 .contacts-text {
     font-family: "Source Sans Pro", sans-serif;
     font-size: 24px;
-    color: #191c18;
+    color: var(--contacts-text-color);
 }
 
 .contacts-data {
@@ -488,7 +490,7 @@ h1 {
 }
 
 .contacts-form {
-    background-color: #faf5f2;
+    background-color: var(--contact-form-color);
     font-family: "Source Sans Pro", sans-serif;
     font-size: 14px;
     color: var(--main-text-color);
@@ -496,7 +498,7 @@ h1 {
 
 .footer-menu {
     font-family: "Lora", sans-serif;
-    color: #000000;
-    background-color: #0d3c00;
+    color: var(--menu-color);
+    background-color: var(--footer-back-color);
     height: 117px;
 }
