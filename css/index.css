@@ -467,28 +467,47 @@ h1 {
 }
 
 #contacts {
-    padding: 100px 0px 100px 0px;
+    margin: 50px 15px 0 15px;
     text-align: left;
 }
 
+.contacts-main{
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px 0 24px;
+    align-items: flex-start;
+}
 .contacts-header {
     font-family: "Lora", serif;
-    font-size: 42px;
+    font-size: 34px;
     color: var(--contacts-text-color);
+    display: flex;
+    justify-content: flex-start;
 }
 
 .contacts-text {
     font-family: "Source Sans Pro", sans-serif;
-    font-size: 24px;
+    font-size: 22px;
+    font-weight: 800;
+    margin: 15px 0 15px 0;
     color: var(--contacts-text-color);
+    display: flex;
+    justify-content: flex-start;
 }
 
 .contacts-data {
     font-family: "Source Sans Pro", sans-serif;
-    font-size: 14px;
+    font-size: 17px;
     color: var(--main-text-color);
+    display: flex;
+    justify-content: flex-start;
 }
-
+.location-img{
+    width: 100%;
+    margin: auto;
+    display: block;
+    padding: 15px 0 15px 0;
+}
 .contacts-form {
     background-color: var(--contact-form-color);
     font-family: "Source Sans Pro", sans-serif;
