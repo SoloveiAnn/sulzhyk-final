@@ -236,6 +236,7 @@ h1 {
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
+    box-shadow: 3px  3px 3px 3px var(--main-text-color);
 }
 
 .price {
@@ -304,7 +305,6 @@ h1 {
 #mediateca h2 {
     font-family: "Lora", serif;
     font-size: 42px;
-    padding: 10px 0 10px 0;
     color: var( --mediateca-main-color);
     display: flex;
     justify-content: center;
@@ -324,7 +324,6 @@ h1 {
     font-family: "Source Sans Pro", sans-serif;
     font-size: 14px;
     color: var(--learning-text-color);
-    padding: 10px 0 20px 0;
     display: flex;
     justify-content: center;
 }
@@ -349,7 +348,6 @@ h1 {
     font-family: "Source Sans Pro", sans-serif;
     font-size: 17px;
     color: var(--main-text-color);
-    padding: 0 0 10px 0;
     display: flex;
     justify-content: flex-start;
     margin-bottom: 40px;
@@ -518,7 +516,9 @@ form {
     border: 1px solid transparent;
     border-radius: 10px;
     padding: 60px;
+    margin-bottom: 20px;
     text-align: left;
+    box-shadow: 3px  3px 3px 3px var(--main-text-color);
 }
 
 @media (min-width: 780px) {
@@ -553,7 +553,7 @@ form {
 
 #footer-menu {
     background-color: var(--footer-back-color);
-    padding: 30px 24px 40px 24px;
+    padding: 65px 24px 30px 24px;
 }
 
 #footer-menu a {
