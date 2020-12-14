@@ -283,6 +283,10 @@ h1 {
     align-items: center;
     align-self: center;
 }
+.order-button a{
+    text-decoration: none;
+    color: #ffffff;
+}
 
 @media (min-width: 780px) {
     .service-list {
@@ -322,17 +326,10 @@ h1 {
 
 .learning-text {
     font-family: "Source Sans Pro", sans-serif;
-    font-size: 14px;
+    font-size: 24px;
     color: var(--learning-text-color);
     display: flex;
     justify-content: center;
-}
-
-.learn-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .mediateca-subheader {
