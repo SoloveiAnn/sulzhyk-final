@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>SULzhyk</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/index.css">
     </head>
     <body>
@@ -59,95 +58,110 @@
                         <p class="price">Безцінно</p>
                         <h3 class="header-services">Оренда домашніх улюбленців для натхнення</h3>
                         <p class="text-services">Упс, ти попався на любові до всього живого. Безліч письменників творили в оточення домашніх улюбленців. Чого тільки варті коти Старого Гема! Але ми не роздаємо тварин. Зате знаємо, хто їм допомагає та як до цього можеш долучитися ти.</p>
-                        
-                        <button class="order-button"><a href="https://uk-ua.facebook.com/groups/461999330624925/">Допомогти тваринам</a></button>
-                        
+                        <button class="order-button">
+                            <a href="https://uk-ua.facebook.com/groups/461999330624925/">Допомогти тваринам</a>
+                        </button>
                     </article>
                 </div>
             </section>
             <section id="mediateca">
                 <h2>Медіатека</h2>
                 <p class="mediateca-about">У нас є чудові лекції, від яких зовсім не хочеться спати! А ще ти можеш послухати трошки підкастів, поки миєш посуд.</p>
-                <p class="learning-text">Підкасти та лекції</p>
-                <p class="learning-text">Блоги</p>
-                <div class="lection-section">
-                    <article class="learn-section">
-                        <img class="img-mediateca" src="img/lit-teoria.jpg" alt="Лекції з теорії літератури">
-                        <h3 class="mediateca-subheader">Лекції з теорії літератури</h3>
-                        <p class="m-text">Українські критики та критикеси розкажуть тобі, як твориться справжня література. Так-так, навіть постмодерн має свій механізм!</p>
-                    </article>
-                    <article class="learn-section">
-                        <img class="img-mediateca" src="img/lit-istoria.jpg" alt="Лекції з історії літератури">
-                        <h3 class="mediateca-subheader">Лекції з історії літератури</h3>
-                        <p class="m-text">Чому не тільки Шевченко - наше все? Як Жадан став панком? І що таке "Синдром сердешної Оксани"?</p>
-                    </article>
-                    <article class="learn-section">
-                        <img class="img-mediateca" src="img/podcast.jpg" alt="Подкаст">
-                        <h3 class="mediateca-subheader">Сулжик.Podcast</h3>
-                        <p class="m-text">Хочеш почути голос Михеда перед сном? Чи пробігти пару кілометрів під роздуми Матіос? Це саме те, що Франко прописав!</p>
-                    </article>
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
+                            <p class="learning-text">Підкасти та лекції</p>
+                        </a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">
+                            <p class="learning-text">Блоги</p>
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <section class="lection-section">
+                            <article class="learn-section">
+                                <img class="img-mediateca" src="img/lit-teoria.jpg" alt="Лекції з теорії літератури">
+                                <h3 class="mediateca-subheader">Лекції з теорії літератури</h3>
+                                <p class="m-text">Українські критики та критикеси розкажуть тобі, як твориться справжня література. Так-так, навіть постмодерн має свій механізм!</p>
+                            </article>
+                            <article class="learn-section">
+                                <img class="img-mediateca" src="img/lit-istoria.jpg" alt="Лекції з історії літератури">
+                                <h3 class="mediateca-subheader">Лекції з історії літератури</h3>
+                                <p class="m-text">Чому не тільки Шевченко - наше все? Як Жадан став панком? І що таке "Синдром сердешної Оксани"?</p>
+                            </article>
+                            <article class="learn-section">
+                                <img class="img-mediateca" src="img/podcast.jpg" alt="Подкаст">
+                                <h3 class="mediateca-subheader">Сулжик.Podcast</h3>
+                                <p class="m-text">Хочеш почути голос Михеда перед сном? Чи пробігти пару кілометрів під роздуми Матіос? Це саме те, що Франко прописав!</p>
+                            </article>
+                        </section>
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <section class="blog-section">
+                            <article class="learn-section">
+                                <img class="img-mediateca" src="img/blog-vitovska.jpg" alt="Блог Вітовської">
+                                <h3 class="mediateca-subheader">Як читати Фоєра?</h3>
+                                <p class="m-text">Екранізовані романи, криза середнього віку, вегетаріанство. Санька Вітовська про книги Фоєра.</p>
+                            </article>
+                            <article class="learn-section">
+                                <img class="img-mediateca" src="img/blog-tsarenko.jpg" alt="Блог Царенко">
+                                <h3 class="mediateca-subheader">Постмодерн і сучукрліт</h3>
+                                <p class="m-text">Роздуми про "щось своє, зібране з чужого" від Каті Царенко.</p>
+                            </article>
+                    </div>
                 </div>
-                <div class="blog-section">
-                    <article class="learn-section">
-                        <img class="img-mediateca" src="img/blog-vitovska.jpg" alt="Блог Вітовської">
-                        <h3 class="mediateca-subheader">Як читати Фоєра?</h3>
-                        <p class="m-text">Екранізовані романи, криза середнього віку, вегетаріанство. Санька Вітовська про книги Фоєра.</p>
-                    </article>
-                    <article class="learn-section">
-                        <img class="img-mediateca" src="img/blog-tsarenko.jpg" alt="Блог Царенко">
-                        <h3 class="mediateca-subheader">Постмодерн і сучукрліт</h3>
-                        <p class="m-text">Роздуми про "щось своє, зібране з чужого" від Каті Царенко.</p>
-                    </article>
-                </div>
-            </section>
-            <section id="test">
-                <h2 class="test-header">Який ти сьогодні Жадан?</h2>
-                <p class="test-text">Жадан на кожен день</p>
-                <button class="test-button">Дізнатися</button>
-                <img class="test-img" src="img/zhadan-happy.png" alt="Читання Сергія Жадана">
-            </section>
-        </main>
-        <footer>
-            <section id="contacts">
-                <div class="contacts-main">
-                    <h2 class="contacts-header">Контакти</h2>
-                    <p class="contacts-text">Заходь вгості!</p>
-                    <p class="contacts-data">Львів, вул.Дорошенка, 15</p>
-                    <p class="contacts-text">Контакти</p>
-                    <p class="contacts-data">+1 (234) 567 89 00</p>
-                    <p class="contacts-data">@SULzhyk</p>
-                    <img class="location-img" src="img/location.jpg" alt="Адреса">
-                </div>
-                <form method="POST" action="https://formspree.io/f/mknpqwak">
-                    <p class="contacts-text">Напиши нам! </p>
-                    <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Ім'я</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        <div id="emailHelp" class="form-text">Ми не будемо надсилати спам. Чесне літературне!</div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Контактний телефон</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Можеш написати все, що думаєш!</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary form-btn">Надіслати</button>
-                </form>
-            </section>
-            <div id="footer-menu">
-                <a href="#about-us">Про нас</a>
-                <a href="#our-services">Послуги</a>
-                <a href="#mediateca">Медіатека</a>
-                <a href="#test">Тест</a>
-                <a href="#contacts">Контакти</a>
-                <p class="footer-info">All rights reserved</p>
+</div></section>
+<section id="test">
+    <h2 class="test-header">Який ти сьогодні Жадан?</h2>
+    <p class="test-text">Жадан на кожен день</p>
+    <button class="test-button">Дізнатися</button>
+    <img class="test-img" src="img/zhadan-happy.png" alt="Читання Сергія Жадана">
+</section>
+</main>
+<footer>
+    <section id="contacts">
+        <div class="contacts-main">
+            <h2 class="contacts-header">Контакти</h2>
+            <p class="contacts-text">Заходь вгості!</p>
+            <p class="contacts-data">Львів, вул.Дорошенка, 15</p>
+            <p class="contacts-text">Контакти</p>
+            <p class="contacts-data">+1 (234) 567 89 00</p>
+            <p class="contacts-data">@SULzhyk</p>
+            <img class="location-img" src="img/location.jpg" alt="Адреса">
+        </div>
+        <form method="POST" action="https://formspree.io/f/mknpqwak">
+            <p class="contacts-text">Напиши нам! </p>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Ім'я</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
             </div>
-        </footer>
-    </body>
-</html>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">Ми не будемо надсилати спам. Чесне літературне!</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Контактний телефон</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Можеш написати все, що думаєш!</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary form-btn">Надіслати</button>
+        </form>
+    </section>
+    <div id="footer-menu">
+        <a href="#about-us">Про нас</a>
+        <a href="#our-services">Послуги</a>
+        <a href="#mediateca">Медіатека</a>
+        <a href="#test">Тест</a>
+        <a href="#contacts">Контакти</a>
+        <p class="footer-info">All rights reserved</p>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body></html>

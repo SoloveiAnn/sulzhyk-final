@@ -236,7 +236,7 @@ h1 {
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
-    box-shadow: 3px  3px 3px 3px var(--main-text-color);
+    box-shadow: 3px 3px 3px 3px var(--main-text-color);
 }
 
 .price {
@@ -283,7 +283,8 @@ h1 {
     align-items: center;
     align-self: center;
 }
-.order-button a{
+
+.order-button a {
     text-decoration: none;
     color: #ffffff;
 }
@@ -515,7 +516,7 @@ form {
     padding: 60px;
     margin-bottom: 20px;
     text-align: left;
-    box-shadow: 3px  3px 3px 3px var(--main-text-color);
+    box-shadow: 3px 3px 3px 3px var(--main-text-color);
 }
 
 @media (min-width: 780px) {
@@ -581,5 +582,3 @@ form {
         justify-content: space-around;
     }
 }
-
-
