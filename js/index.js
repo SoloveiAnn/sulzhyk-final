@@ -1,7 +1,6 @@
 function destroy() {
     document.querySelector('html').innerHTML = '';
     document.querySelector('html').style.backgroundColor = 'black';
-    target.hidden = '';
 }
-const buttonDestroy = document.querySelector('.dont-click-btn');
+const buttonDestroy = document.querySelector('.destroy-btn');
 buttonDestroy.addEventListener('click', destroy);
