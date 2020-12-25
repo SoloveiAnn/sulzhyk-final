@@ -16,6 +16,7 @@ class Quiz {
         document.querySelector('.result').innerText = '';
         document.querySelector('.answer').value = '';
     }
+    
     checkAnswer() {
          const answer = document.querySelector('.answer').value;
          document.querySelector('.result').innerText = 
