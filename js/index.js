@@ -5,3 +5,4 @@ function destroy() {
 const buttonDestroy = document.querySelector('.destroy-btn');
 buttonDestroy.addEventListener('click', destroy);
 
+

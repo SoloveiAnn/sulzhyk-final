@@ -11,9 +11,15 @@
         <header>
             <nav>
                 <div class="socials">
-                    <img src="img/fb.svg" alt="Facebook">
-                    <img src="img/insta.svg" alt="Instagram">
-                    <img src="img/youtube.svg" alt="Youtube">
+                    <a href="#contacts">
+                        <img src="img/fb.svg" alt="Facebook">
+                    </a>
+                    <a href="#contacts">
+                        <img src="img/insta.svg" alt="Instagram">
+                    </a>
+                    <a href="#contacts">
+                        <img src="img/youtube.svg" alt="Youtube">
+                    </a>
                 </div>
                 <label class="burger-menu-icon" for="burger-checkbox">☰</label>
                 <input type="checkbox" id="burger-checkbox">
@@ -34,7 +40,7 @@
             <section id="about-us">
                 <h2 class="about-us-header">—  Про нас  —</h2>
                 <p class="about-us-subheader">Вітаємо у мінливому світі сучукрліту!</p>
-                <p class="about-us-text">Привіт, мій друже! Ми - спільнота українських письменників, редакторів, видавців та просто фанатів сучукрліту. Тут ти можеш знайти щось цікаве, щось корисне та щось неймовірне. А ще, ми допоможемо тобі написати твій перший (другий? десятий?) шедевр.
+                <p class="about-us-text">Привіт, мій друже! Ми - спільнота українських письменників, редакторів, видавців та просто фанатів сучукрліту. Тут ти можеш знайти щось цікаве, щось корисне та щось неймовірне. А ще ми допоможемо тобі написати твій перший (другий? десятий?) шедевр.
 Долучайся! І нехай прибуде з тобою Кокотюха!</p>
                 <img src="img/about-us.jpg" alt="Про нас" class="about-us-img">
             </section>
@@ -45,22 +51,26 @@
                     <article class="services">
                         <p class="price">Від 3$/стор.</p>
                         <h3 class="header-services">Професійна редактура</h3>
-                        <p class="text-services">Твій роман нарешті набув епічно-сакрально-неймовірно-інтригуючого фіналу? Тобі потрібен супергерой Редактор, який приготує його для видавництва.</p>
-                        <button class="order-button">Замовити</button>
+                        <p class="text-services">Твій роман нарешті набув епічно-сакрально-неймовірно-інтригуючого фіналу? Тобі потрібен супергерой Редактор, який підготує його для видавництва.</p>
+                        <a href="#contacts">
+                            <button class="order-button">Замовити</button>
+                        </a>
                     </article>
                     <article class="services">
                         <p class="price">від 40 $</p>
                         <h3 class="header-services">Індивідуальний план вправ із креативного письма</h3>
                         <p class="text-services">Так-так, літературні навички можна прокачати! І ми створимо для тебе план вправ на кілька місяців або цілий рік.</p>
-                        <button class="order-button">Замовити</button>
+                        <a href="#contacts">
+                            <button class="order-button">Замовити</button>
+                        </a>
                     </article>
                     <article class="services">
                         <p class="price">Безцінно</p>
                         <h3 class="header-services">Оренда домашніх улюбленців для натхнення</h3>
-                        <p class="text-services">Упс, ти попався на любові до всього живого. Безліч письменників творили в оточення домашніх улюбленців. Чого тільки варті коти Старого Гема! Але ми не роздаємо тварин. Зате знаємо, хто їм допомагає та як до цього можеш долучитися ти.</p>
-                        <button class="order-button">
-                            <a href="https://uk-ua.facebook.com/groups/461999330624925/">Допомогти тваринам</a>
-                        </button>
+                        <p class="text-services">Упс, ти попався на любові до всього живого. Безліч письменників творили під пильним наглядом домашніх улюбленців. Чого тільки варті коти Старого Гема! Але ми не роздаємо тварин. Зате знаємо, хто їм допомагає та як до цього можеш долучитися ти.</p>
+                        <a href="https://uk-ua.facebook.com/groups/461999330624925/" target="_blank">
+                            <button class="order-button">Допомогти тваринам</button>
+                        </a>
                     </article>
                 </div>
             </section>
@@ -124,8 +134,8 @@
 <section id="test">
     <h2 class="test-header">Який ти сьогодні Жадан?</h2>
     <p class="test-text">Жадан на кожен день</p>
-    
-    <div>
+    <img class="test-img" src="img/zhadan-happy.png" alt="Читання Сергія Жадана">
+    <div class="question-test">
         <label>
             <input type='text' disabled class="question">
         </label>
@@ -135,9 +145,8 @@
         </label>
         <button class="check">Go!</button>
         <p class="result"></p>
+        <button class="next">Це не те. Ще раз!</button>
     </div>
-    
-    <img class="test-img" src="img/zhadan-happy.png" alt="Читання Сергія Жадана">
 </section>
 </main>
 <footer>
