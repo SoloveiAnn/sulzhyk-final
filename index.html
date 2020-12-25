@@ -124,7 +124,18 @@
 <section id="test">
     <h2 class="test-header">Який ти сьогодні Жадан?</h2>
     <p class="test-text">Жадан на кожен день</p>
-    <button class="test-button">Дізнатися</button>
+    <div>
+        <label>
+            <input type='text' disabled class="question">
+        </label>
+        <br>
+        <label>
+            <input type="text" class="answer">
+        </label>
+        <button class="check">Go!</button>
+        <p class="result"></p>
+    </div>
+    
     <img class="test-img" src="img/zhadan-happy.png" alt="Читання Сергія Жадана">
 </section>
 </main>
@@ -172,4 +183,5 @@
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 <script src='js/index.js'></script>
+<script src="js/quiz.js"></script>
 </body></html>
