@@ -435,7 +435,7 @@ h1 {
     font-weight: 600;
     color: var(--test-text-color);
     padding: 20px 0 20px 0;
-    margin-bottom: 20px: ;
+    margin-bottom: 20px ;
     display: flex;
     justify-content: flex-start;
 }
@@ -666,4 +666,19 @@ form {
         flex-direction: row;
         justify-content: space-around;
     }
+}
+
+
+
+.answer{
+   border: 0;
+   border-radius: 10px;
+   background: #6477EB;
+   color: #fff;
+   padding: 10px 25px;
+   width: 70%;
+   font-size: 15pt;
+   display: block;
+   margin: 2px auto;
+   cursor: pointer;
 }
